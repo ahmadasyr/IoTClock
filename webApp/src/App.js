@@ -6,7 +6,7 @@ import { func } from 'prop-types';
 import axios from 'axios';
 import io from 'socket.io-client';
 // socket connection from env
-const socket = io(process.env.API_URL);
+const socket = io("http://203.161.63.57:6969");
 function App() {
 
   const [message, setMessage] = useState('');
